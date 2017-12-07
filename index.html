@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Transparent to Opaque Converter</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100i,100" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="header">
+    <h1>
+        <span id="alphaEraserTitle">Alpha Remover</span>
+        <br>
+        <span>color converter</span>
+    </h1>
+</div>
+
+
+
+<!-- User Entered Color -->
+<table id="table">
+    <tr>
+        <th class="colorCell">
+            <div id="transparentColorSquare" class="image colorSquare">
+                <div id="transparentColor"></div>
+            </div>
+        </th>
+        <th class="colorCell">
+            <div id="opaqueColorSquare" class="colorSquare">
+                <div id="opaqueColor"></div>
+            </div>
+        </th>
+    </tr>
+    <tr>
+        <th class="formCell">
+            <div class="form">
+                <h3 class="instructions">
+                    Enter a Color
+                </h3>
+                <label for="rInput">R: </label>
+                <input id="rInput" placeholder="0-255" type="text" class="input rgbField rgbInput">
+                <label for="gInput">G: </label>
+                <input id="gInput" placeholder="0-255" type="text" class="input rgbField rgbInput">
+                <label for="bInput">B: </label>
+                <input id="bInput" placeholder="0-255" type="text" class="input rgbField rgbInput">
+                <br/>
+                <label for="alphaInput">Alpha: </label>
+                <input id="alphaInput" placeholder="0.01-0.99" type="text" class="input alphaHexField">
+                <br/>
+                <!--
+                <label for="hexInput">#Hex: </label>
+                <input id="hexInput" placeholder="#000000" type="text" class="input alphaHexField">
+                -->
+                <p id="errorHandling"></p>
+            </div>
+        </th>
+        <th class="formCell">
+            <div class="form">
+                <h3 id="opaqueTitle" class="instructions outputTitleDisabled">
+                    Opaque Version
+                </h3>
+                <label for="rOutput" class="outputRGBLabel outputLabelDisabled">R: </label>
+                <input id="rOutput" placeholder="0-255" type="text" disabled class="rgbOutput rgbField">
+                <label for="gOutput" class="outputRGBLabel outputLabelDisabled">G: </label>
+                <input id="gOutput" placeholder="0-255" type="text" disabled class="rgbOutput rgbField">
+                <label for="bOutput" class="outputRGBLabel outputLabelDisabled">B: </label>
+                <input id="bOutput" placeholder="0-255" type="text" disabled class="rgbOutput rgbField">
+                <br/>
+                <!--
+                <label for="hexOutput" class="outputLabelDisabled">#Hex: </label>
+                <input id="hexOutput" placeholder="#000000" type="text" disabled class="alphaHexField">
+                -->
+            </div>
+        </th>
+    </tr>
+</table>
+<div id="footer">
+    <a href="https://github.com/elidlocke">check out my github</a>
+<div>
+
+<!--scripts-->
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
