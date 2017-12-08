@@ -22,11 +22,7 @@ function init(){
     getRgbInput();
     //get the input from the alpha Field
     getAlphaInput();
-    //convert the RGBA value to RGB
-
-    //write the output to the RGB values
-
-    //display the RGBA colours
+    //display the RGBA & RGB colours
     colorSquares();
 }
 
