@@ -71,7 +71,6 @@ function updateOutput(){
         validateInput();
         transparentSquare.style.backgroundColor = color;
         var outRgbNums = colorOpaque(rNum, gNum, bNum, alphaNum);
-        console.log(outRgbNums);
         printNums(outRgbNums);
     }
 
@@ -103,7 +102,6 @@ function colorOpaque(r, g, b, alpha){
     var opaqueB = Math.round(alpha * b + (1 - alpha) * 255);
     var opaqueC = "rgb(" + opaqueR
     + ", " + opaqueG + ", " + opaqueB + ")";
-    console.log(opaqueC);
     opaqueSquare.style.backgroundColor = opaqueC;
     return ([opaqueR, opaqueG, opaqueB]);
 }
